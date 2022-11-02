@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/project.css">
+</head>
+<body>
+    <div class="card_maintitle" >
+        <h1>Projects</h1>
+    </div>
+  <div class="cards-list">
+   
+      <a href="{% url 'titanic' %}" style="text-decoration: none;"> 
+        <div class="card 1">
+        <div class="card_image"> <img src="static/images/titanic.jpg" /> </div>
+        <div class="card_title title-white"><p class="card-heading">Titanic survivals</p></div>
+        </div>
+      </a>
+         <a href=" {% url 'iris' %}" style="text-decoration: none;">
+        <div class="card 2">
+        <div class="card_image"> <img src="static/images/iris setosa.jpg" /> </div>
+        <div class="card_title title-white"><p>iris setosa</p></div>
+        </div>
+          </a> 
+        <a href="{% url 'house'%}" style="text-decoration: none;">
+          <div class="card 1">
+            <div class="card_image"><img src="static/images/housenew.jpg"/></div>
+            <div class="card_title title-white">
+              <p>house price </p>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'cancer' %}"style="text-decoration: none;">
+          <div class="card 1">
+            <div class="card_image"> <img src="static/images/cancer.jpg" /> </div>
+            <div class="card_title title-white">
+              <p>Cancer Prediction</p>
+            </div>
+          </div>
+        </a>
+       
+        <a href="{% url 'sentiment' %}"style="text-decoration: none;">
+        <div class="card 3">
+          <div class="card_image">
+            <img src="static/images/sentiment.jpg" />
+          </div>
+          <div class="card_title title-white">
+            <p>Sentiment analyzer</p>
+          </div>
+          
+        </div>
+      </a>
+          
+          <div class="card 4">
+          <div class="card_image">
+            <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+            </div>
+          <div class="card_title title-black">
+            <p>Card Title</p>
+          </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+            
+            <div class="card 4">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+              </div>
+            <div class="card_title title-black">
+              <p>Card Title</p>
+            </div>
+            </div>
+        
+  </div>  
+</body>
+</html>

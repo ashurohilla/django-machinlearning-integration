@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/project.css">
+</head>
+<body>
+    <div class="card_maintitle" >
+        <h1>Projects</h1>
+    </div>
+
+    {% for n in projectdata %}
+    <div class="cards-list">
+        <a href="/Blog/{{n.project_id}}" style="text-decoration: none;"> 
+          <div class="card 1">
+          <div class="card_image"> <img src="{{n.project_images.url}}" /> </div>
+          <div class="card_title title-black"><p class="card-heading">{{n.Project_name}}</p></div>
+          </div>
+        </a>    
+    </div>  
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head>
+  <body>
+    <h1>iris flower prediction</h1>
+    <form action="{% url 'irisresult' %}">
+    {% csrf_token %}
+    <h1>Predict Salary Analysis</h1>
+<!-- Main Input For Receiving Query to our ML -->
+<form action=""method="post">
+<input type="text" name="sepallength" placeholder="SepalLength" required="required" />
+<input type="text" name="sepalwidth" placeholder="SepalWidth" required="required" />
+<input type="text" name="petallength" placeholder="PetalLength" required="required" />
+<input type="text" name="petalwidth" placeholder="PetalWidth" required="required" />
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+</body>
+</html>

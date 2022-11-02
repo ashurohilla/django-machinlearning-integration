@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>house predication </h1>
+    <form action="{% url 'houseresult' %}">
+      {% csrf_token %}
+      
+      <p>Passenger Class:</p>
+      <input type="text" name="total_sqft" placeholder="squarefitarea">
+      <br>
+
+      <p>Sex:</p>
+      <input type="text" name="balconies" placeholder="number of bslconies">
+      <br>
+
+      <p>Age:</p>
+      <input type="text" name="bathroom" placeholder="number of bathroom">
+      <br>
+
+      <p>Sibsp:</p>
+      <input type="text" name="bhk" placeholder="number of bhk">
+      <br>
+
+      <p>Parch:</p>
+      <input type="text" name="Area" placeholder="areatype" >
+      <br>
+
+      <p>Fare:</p>
+      <input type="text" name="location" placeholder="location">
+      <br>
+
+      <input type="submit" value='Get Predictions'>
+    </form>
+</body>
+</html>
